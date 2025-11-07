@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo mundo odeia a banca - Jogadores</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="rounds">Rodada: <span id="roundCounter">0</span></div>
+    </header>
+
+    <main class="board">
+        <div class="center-area">
+            <div id="monte" class="monte" title="Monte (clique para sacar)">
+                <div class="stack"></div>
+            </div>
+            <div id="discard" class="discard" title="Descartes"></div>
+        </div>
+    </main>
+
+    <div class="controls">
+        <div class="left-controls">
+            <button id="passBtn" class="btn">Passar a Vez</button>
+        </div>
+        <div class="right-controls">
+            <button id="discardBtn" class="btn">Descartar</button>
+            <button id="playersBtn" class="btn">Jogadores</button>
+        </div>
+    </div>
+
+    <div class="hand-area">
+        <div id="playerName" class="player-name"></div>
+        <div id="hand" class="hand"></div>
+    </div>
+
+    <!-- Modal dos jogadores -->
+    <div id="playersModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Configurar Jogadores</h2>
+            <label for="numPlayers">Número de jogadores (2-6)</label>
+            <input id="numPlayers" type="number" min="2" max="6" value="4">
+            <div id="playersList" class="players-list"></div>
+            <div class="modal-actions">
+                <button id="restartBtn" class="btn danger">Reiniciar</button>
+                <div class="spacer"></div>
+                <button id="savePlayersBtn" class="btn primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jogadas mostradas no canto superior esquerdo -->
+    <div id="playedTop" class="played-top"></div>
+
+    <!-- Pilha com as cartas jogadas ao fim da rodada -->
+    <div id="roundPile" class="round-pile hidden">
+        <div id="roundCards" class="round-cards"></div>
+        <button id="continueBtn" class="btn primary">Continuar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
