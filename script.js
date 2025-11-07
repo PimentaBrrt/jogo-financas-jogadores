@@ -1,4 +1,4 @@
-const MAX_PLAYERS = 6;
+const MAX_PLAYERS = 4;
 const MIN_PLAYERS = 2;
 const STARTING_HAND = 5;
 const TOTAL_CARDS = 40;
