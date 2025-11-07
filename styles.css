@@ -139,3 +139,26 @@ body {
     white-space: nowrap;
     background: #0b84ff;
 }
+
+@media(max-width:1400px) {
+    .card{
+        width: 120px;
+        height: 160px;
+        margin: 10px 0;
+        font-size: 14px;
+        padding: 12px;
+    }
+    .monte {
+        width: 120px;
+        height: 160px;
+    }
+    .round-cards .card {
+        width: 120px;
+        height: 160px;
+        font-size: 14px;
+        padding: 12px;
+    }
+    .round-cards {
+        gap: 15px;
+    }
+}
