@@ -1,6 +1,6 @@
 const MAX_PLAYERS = 4;
 const MIN_PLAYERS = 2;
-const STARTING_HAND = 5;
+const STARTING_HAND = 4;
 const TOTAL_CARDS = 40;
 
 const playersModal = document.getElementById('playersModal');
